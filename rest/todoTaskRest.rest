@@ -1,0 +1,25 @@
+
+
+GET http://localhost:4000/todotasks HTTP/1.1
+
+###
+
+POST http://localhost:4000/todotasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "new title",
+    "description": "I will be including a new description"
+}
+
+###
+
+PUT http://localhost:4000/todotasks/62bf5529ad009b2903d681f6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "I will be including a new description"
+}
+
+###
+DELETE http://localhost:4000/todotasks/62bf5529ad009b2903d681f6 HTTP/1.1
